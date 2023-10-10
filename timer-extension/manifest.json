@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "timer extension",
+  "version": "1.0.0",
+  "description": "timer extension",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/assets/timer.png",
+      "32": "/assets/timer.png"
+    }
+  },
+  "options_page": "options.html",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
