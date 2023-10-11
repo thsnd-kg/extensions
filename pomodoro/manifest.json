@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro",
+  "version": "1.0.0",
+  "description": "Pomodoro Extension",
+  "icons": {
+    "16": "/assets/pomodoro.png",
+    "32": "/assets/pomodoro.png",
+    "48": "/assets/pomodoro.png",
+    "128": "/assets/pomodoro.png"
+  },
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": {
+      "16": "/assets/pomodoro.png",
+      "32": "/assets/pomodoro.png",
+      "48": "/assets/pomodoro.png",
+      "128": "/assets/pomodoro.png"
+    }
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "alarms", "notifications"]
+}
